@@ -17,7 +17,13 @@ function App() {
     <Router>
       <Header />
       <main>
-        {/* Add Routes here! */}
+        <Route path='/About'> <About /> </Route>
+        <Route path='/sign-up'> <SignUp /> </Route>
+        <Route path='/articles'> <Articles /> </Route>
+        <Route> <Article /> </Route>
+        <Route path='/categories'> <Categories /> </Route>
+        <Route> <Author /> </Route>
+        <Route path='/profile'> <Profile/> </Route>
       </main>
       <Footer />
     </Router>

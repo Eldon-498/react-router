@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { selectArticles, filterArticles } from "../features/articles/articlesSlice";
 import Search from "./Search";
+import {  Link, NavLink } from 'react-router-dom';
 
 // Import Link from React Router
 
@@ -25,9 +26,9 @@ export default function Articles () {
             return (
               <li key={article.slug}>
                 {/* Replace these a tags! */}
-                <a href={`/articles/${article.slug}`}>
+                <NavLink to={`/articles/${article.slug}`}>
                   {article.title}
-                </a>
+                </NavLink>
               </li>
             )
           })
